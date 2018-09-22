@@ -15,4 +15,13 @@ describe("index page", function() {
             expect(res).to.have.status(200)
         });
     });
+
+    it('should return 200 status', function() {
+        return chai
+        .request(app)
+        .get('/')
+        .then(function(res) {
+            expect(res).to.have.status(200)
+        });
+    });
 });

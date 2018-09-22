@@ -27,3 +27,14 @@ describe("create page", function() {
         });
     });
 });
+
+describe("activities page", function() {
+    it('should return 200 status', function() {
+        return chai
+        .request(app)
+        .get('/activities')
+        .then(function(res) {
+            expect(res).to.have.status(200)
+        });
+    });
+});

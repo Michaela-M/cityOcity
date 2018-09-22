@@ -1,2 +1,9 @@
 language: node_js
 node_js: node
+deploy:
+  provider: heroku
+  api_key:
+    secure: "jScskZyp45A4J2RqJOrJ4m3+T6ggtGlDk8gytAMh3vLnDUBw9N28djDmf1w37grfdz32Xhlc+oe0Mg0EXAxzbyQyew8KQsGVbwd9lQQz8ocrQftQCbQNmiwalGMX7pLPl0W02qC8ADuZW9sZSyRvaw+c+C4PjnTDSF/NTZ73VdFw0gNsh00+O8OdWDTNGWh+ACYHsfz4jBgTim7Oct9/hd+zHgNMbWrysPVhKzj3cH/2FEernj4EA5HXR9roXOUvcDVDdmO2kWoyS63Dx1ocgZWMY2+x+qZ2L1YJxhA7lBXqvzhjYtWYeStFw8vyBKI2sYB2WkBGZK2VUudVkEltID8fP52OSvFwYhPM/TkcX6VH2k/8jZI5NkZ4NZT3TMilEUKjf4YlH7/uE9dVR48MT2AEbnhGA7xP2tmCXGTNmuhE/o/4Q9b0MlBlBv3uTEGFf9LPGOu5BWTSOaYkc+qPFm6nQb2JQtHrl+zyYVK0pGjEumvkP6lKs4snzMzy08JjYFgbVFOWLVzjECIBOEM/eODe19Re2QyASVO3RimqmJGcyqfKI8HOULkti8n+6w2rb8alXimCzi1d9fFz37471H70EqWUiW7JKSwjtJMgXuBHHeHmo0jX1pq4qdGi4hq9iHm/7MqzHXbV7ZUMQwsvTAT5UBAEWKFO80e/CcgY+bo="
+  app: limitless-badlands-24778
+  on:
+    repo: Michaela-M/cityOcity

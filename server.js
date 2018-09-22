@@ -3,10 +3,7 @@ const express = require('express');
 const app = express();
 
 app.use(express.static('public'));
-app.get('/create-listing', (req, res)=> {
-    console.log('testing route');
-    res.sendFile('create');
-})
+app.use('/create-listing', express.static('public/create.html'));
 
 if (require.main === module) {
     app.listen(process.env.PORT || 8080, function() {

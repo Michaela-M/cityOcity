@@ -15,11 +15,13 @@ describe("index page", function() {
             expect(res).to.have.status(200)
         });
     });
+});
 
+describe("create page", function() {
     it('should return 200 status', function() {
         return chai
         .request(app)
-        .get('/')
+        .get('/create-listing')
         .then(function(res) {
             expect(res).to.have.status(200)
         });

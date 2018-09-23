@@ -9,7 +9,7 @@ let MOCK_ACTVITIES = {
             "website": "www.dmns.org",
             "description": "Natural history exhibitions, IMAX and planetarium shows, activities, and lectures that explore the wonders of science, Colorado, Earth, and the universe.",
             "tags": "kid-friendly, educational",
-            "photo": "null"
+            "photoLink": "null"
         },
         {
             "id": "00002",
@@ -20,13 +20,13 @@ let MOCK_ACTVITIES = {
             "website": "www.coloradorailroadmuseum.org",
             "description": "There's something amazing about trains. The familiar whistle has always promised adventure. The gentle rock of the rails has set the rhythm of our lives.",
             "tags": "kid-friendly, educational",
-            "photo": "null"
+            "photoLink": "null"
         }
     ]
 };
 
 function getActivities(callbackFn) {
-    setTimeout(function() { callbackFn(MOCK_ACTVITIES)}, 100);
+    $('#displayActivities').html(displayActivities);
 }
 
 function displayActivities(data) {

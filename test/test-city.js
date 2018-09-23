@@ -1,8 +1,11 @@
 const chai = require('chai');
 const chaiHttp = require('chai-http');
-const app = require('../server.js');
+
 
 const expect = chai.expect;
+
+const { Activity } = require('../models');
+const { runServer, app, closeServer } = require('../server');
 
 chai.use(chaiHttp);
 

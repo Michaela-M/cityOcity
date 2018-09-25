@@ -1,4 +1,4 @@
-let MOCK_ACTVITIES = {
+let MOCK_ACTIVITIES = {
     "activityListing": [
         {
             "id": "00001",
@@ -26,7 +26,7 @@ let MOCK_ACTVITIES = {
 };
 
 function getActivities(callbackFn) {
-    $('#displayActivities').html(displayActivities);
+    setTimeout(function(){ callbackFn(MOCK_ACTIVITIES)}, 100);
 }
 
 function displayActivities(data) {
